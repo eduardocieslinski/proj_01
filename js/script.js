@@ -15,19 +15,29 @@ $(function () {
 
         // listaMenu.slideToggle();
 
-        if(listaMenu.is(':hidden') == true){
+        if (listaMenu.is(':hidden') == true) {
             //fa fa-times
             //fa fa-bars
-        var icone = $('.botao-menu-mobile').find('i')
-        icone.removeClass('fa-bars');
-        icone.addClass('fa-times')
-        listaMenu.slideToggle();
-    }else{
-        var icone = $('.botao-menu-mobile').find('i')
-        icone.removeClass('fa-times');
-        icone.addClass('fa-bars')
-        listaMenu.slideToggle();
+            var icone = $('.botao-menu-mobile').find('i')
+            icone.removeClass('fa-bars');
+            icone.addClass('fa-times')
+            listaMenu.slideToggle();
+        } else {
+            var icone = $('.botao-menu-mobile').find('i')
+            icone.removeClass('fa-times');
+            icone.addClass('fa-bars')
+            listaMenu.slideToggle();
         }
-    })
+    });
+
+    if($('target').length > 0){
+        //o elemento existe, portanto precisamos dar o scroll em algum elemento 
+        var elemento = '#'+$('target').attr('target');
+        
+        var divScroll = $(elemento).offset().top;
+        
+        $('html,body').animate({scrolTop:divScroll});
+
+    }
 
 })
