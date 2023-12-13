@@ -142,5 +142,3 @@
         <div class="clear"></div>
     </div><!--center-->
 </section><!--extras-->
-
-<!--TEste-->
