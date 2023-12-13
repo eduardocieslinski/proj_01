@@ -10,6 +10,11 @@
             <input type="submit" name="acao" value="Cadastrar">
         </form>
     </div><!--center-->
+    <div class="bullets">
+        
+        
+    </div><!--Bullets-->
+
 </section>
 
 <section class="descricao-autor">
