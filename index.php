@@ -42,7 +42,7 @@
                     <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>contact">Contato</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -88,11 +88,21 @@
 
     <script src="<?php echo INCLUDE_PATH; ?>js/node_modules/jquery/dist/jquery.js"></script>
     <script src="<?php echo INCLUDE_PATH; ?>js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBssZtRiFwlLdtoAd7K03lNnCOKRKVZ4eA">
+    </script>
+    <script src="<?php echo INCLUDE_PATH; ?>js/map.js"></script>
+    
     <?php
-    if ($url == 'contact') {
-        ?>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBssZtRiFwlLdtoAd7K03lNnCOKRKVZ4eA">
-        </script>
-        <script src="<?php echo INCLUDE_PATH; ?>js/map.js"></script>
+        if ($url == 'home' ||  $url == ''){
+    ?>
+
+    <script src="<?php echo INCLUDE_PATH; ?>js/slider.js"></script> 
     <?php } ?>
+
+    <?php
+		if($url == 'contato'){
+	?>
+	<?php } ?>
+	<script src="<?php echo INCLUDE_PATH; ?>js/exemplo.js"></script>
 </body>
+</html>
