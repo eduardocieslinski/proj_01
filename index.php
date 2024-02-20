@@ -17,7 +17,7 @@
 </head>
 
 <body>
-
+<base base="<?php echo INCLUDE_PATH; ?>" />
     <?php
     $url = isset($_GET['url']) ? $_GET['url'] : 'home';
     switch ($url) {
@@ -42,7 +42,7 @@
                     <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
+                    <li><a realtime href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -54,7 +54,7 @@
                 <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
-                <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
+                <li><a realtime href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
             </ul>
         </nav>
         <div class="clear"></div><!--clear-->
