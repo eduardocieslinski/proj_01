@@ -43,6 +43,7 @@ $(function(){
 		$('.banner-single').eq(curSlide).animate({'opacity':'1'},2000);
 		$('.bullets span').removeClass('active-slider');
 		currentBullet.addClass('active-slider');
+		
 	});
 
 })
