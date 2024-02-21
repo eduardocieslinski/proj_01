@@ -9,5 +9,6 @@
 
     spl_autoload_register($autoload);
 
-define('INLCUDE_PATH','http://localhost/Projeto_pratico_01' )
+    define('INCLUDE_PATH','http://localhost/Curso/Projeto_pratico_01/');
+    define('INCLUDE_PATH_PAINEL',INCLUDE_PATH.'painel/');
 ?>
