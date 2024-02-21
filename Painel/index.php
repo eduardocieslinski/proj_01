@@ -4,7 +4,7 @@
     if(Painel::logado() == false){
         include('login.php');
     }else{
-        include('main.php')
+        include('main.php');
     }
-    }
+    
 ?>
