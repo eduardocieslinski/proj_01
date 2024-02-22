@@ -1,0 +1,28 @@
+/* Estilos para o popup */
+.popup {
+    display: block; /* Exibe o popup */
+    position: fixed; /* Para manter o posicionamento mesmo quando a página é rolada */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza completamente */
+    background-color: #ffffff; /* Cor de fundo branca */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2); /* Sombra suave */
+    z-index: 9999; /* Garante que o popup esteja acima do conteúdo */
+    max-width: 80%; /* Largura máxima */
+    text-align: center; /* Texto centralizado */
+  }
+  
+  .overlay {
+    /* Overlay para cobrir o conteúdo por trás do popup */
+    display: block; /* Exibe o overlay */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* Cor escura semitransparente */
+    z-index: 9998; /* Abaixo do popup, mas acima do conteúdo */
+  }
+  

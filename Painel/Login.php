@@ -13,6 +13,10 @@
 <body>
 
     <div class="box-login">
+    <?php
+        $pdo = MySql::conectar();
+    ?>
+    
         <h2>Efetue o login</h2>
         <form method="post">
             <input type="text" name="user" placeholder="Login..." required>
