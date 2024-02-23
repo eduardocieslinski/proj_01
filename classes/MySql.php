@@ -1,5 +1,5 @@
 <?php
-include 'popup.php';'popup.css';
+include 'popup.php';
 
 	class MySql{
 
