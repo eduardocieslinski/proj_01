@@ -44,3 +44,15 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #0056b3;
 }
+
+
+/*Box erro do painel*/
+
+.erro-box{
+    width:100%;
+    padding: 8px 2%;
+    text-align: center;
+    background: #f75353;
+    color: white;
+    font-size: 15px;
+}
