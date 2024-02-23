@@ -1,1 +1,1 @@
-<h2>Realizando teste  <?php echo $_SESSION['user']; ?></h2>
+<h2>Realizando testee<?php echo $_SESSION['user']; ?></h2>
