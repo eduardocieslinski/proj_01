@@ -5,6 +5,8 @@ body {
     background-color: #f2f2f2;
 }
 
+/*inicio pagina de login */
+
 .box-login {
     width: 300px;
     margin: 100px auto;
@@ -55,4 +57,16 @@ input[type="submit"]:hover {
     background: #f75353;
     color: white;
     font-size: 15px;
+}
+
+/*fim pagina de login*/ 
+
+/* painel de contereol */
+
+header{
+    padding: 10px 0;
+    background:#004d40 ;
+    width: 100%;
+
+
 }
