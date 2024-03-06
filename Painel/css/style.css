@@ -61,12 +61,33 @@ input[type="submit"]:hover {
 
 /*fim pagina de login*/ 
 
-/* painel de contereol */
+/* painel de controle */
+
+.clear{clear:both;}
+
+.center{padding: 0 2%;margin:0 auto;}
+div.menu{
+    overflow-y:auto ;
+    height: 900px;
+    background: #607d8b;
+    float: left;
+    width: 300px;
+}
 
 header{
+    float: left;
     padding: 10px 0;
-    background:#004d40 ;
-    width: 100%;
+    background:#78909c;
+    width: calc(100% - 300px);
 
 
+}
+
+.loggout{
+    float: right;
+}
+
+.loggout a{
+    color: white;
+    font-size: 20px;
 }
