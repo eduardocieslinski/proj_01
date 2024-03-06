@@ -19,7 +19,7 @@
        if(isset($_POST['acao'])){
         $user = $_POST['user'];
         $password = $_POST['password'];
-        $sql = MySql::conectar()->prepare("SELECT * From `tb_admin.usuarios` WHERE user =? AND password =?");
+        $sql = MySql::conectar()->prepare("SELECT * FROM `tb_admin.usuarios` WHERE user = ? AND password = ?");
         $sql->execute(array($user,$password));
         if($sql->rowCount() == 1){
             //Logamos com sucesso
@@ -27,7 +27,7 @@
             $_SESSION['user'] = $user;
             $_SESSION['password'] = $password;
             header('Location: '.INCLUDE_PATH_PAINEL);
-            die();
+           die();
         }else{
             //Falhou
             echo '<div class="erro-box"><i class="fa fa-times"></i> Usuario ou senha incorretos!</div>';

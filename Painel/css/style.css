@@ -5,6 +5,8 @@ body {
     background-color: #f2f2f2;
 }
 
+/*inicio pagina de login */
+
 .box-login {
     width: 300px;
     margin: 100px auto;
@@ -55,4 +57,37 @@ input[type="submit"]:hover {
     background: #f75353;
     color: white;
     font-size: 15px;
+}
+
+/*fim pagina de login*/ 
+
+/* painel de controle */
+
+.clear{clear:both;}
+
+.center{padding: 0 2%;margin:0 auto;}
+div.menu{
+    overflow-y:auto ;
+    height: 900px;
+    background: #607d8b;
+    float: left;
+    width: 300px;
+}
+
+header{
+    float: left;
+    padding: 10px 0;
+    background:#78909c;
+    width: calc(100% - 300px);
+
+
+}
+
+.loggout{
+    float: right;
+}
+
+.loggout a{
+    color: white;
+    font-size: 20px;
 }
